@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>craftkit</title>
+    
+    <meta property="og:title" content=""/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content=""/>
+    
+    <meta property="og:url" content=""/>
+    
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136310050-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-136310050-1');
+	</script>
+
+    <script src="docs/craft-uikit/scripts/prettify/prettify.js"></script>
+    <script src="docs/craft-uikit/scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="docs/craft-uikit/styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="docs/craft-uikit/styles/jsdoc.css">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="padding-top:44px;">
+
+<style>
+.top-menu {
+	position:fixed;top:0px;left:0px;width:100%;height:44px;
+	display:flex;flex-direction:row;
+	background-color:rgba(102,0,102,0.90);
+	line-height:44px;font-size:18px;
+	color:rgba(255,255,255,0.90);
+	font-family:'Lucida Grande', 'Lucida Sans Unicode', arial, sans-serif;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.top-menu-item-top {
+	display:inline-block;padding-left:44px;padding-right:44px;cursor:pointer;
+}
+.top-menu-item-top:hover {
+	background-color:rgba(102,0,102,0.75);
+}
+.top-menu-item {
+	display:inline-block;padding-left:22px;padding-right:22px;cursor:pointer;
+}
+.top-menu-item:hover {
+	background-color:rgba(102,0,102,0.75);
+}
+.top-menu-item-top a {
+	color:rgba(255,255,255,0.90);
+}
+.top-menu-item a {
+	color:rgba(255,255,255,0.90);
+}
+.top-menu-item-github {
+	display:inline-block;padding-right:44px;margin-left:auto;cursor:pointer;font-size:24px;
+}
+.top-menu-item-github a {
+	color:rgba(255,255,255,0.90);
+}
+</style>
+<div class="top-menu">
+<div class="top-menu-item-top"><a href="/">Top</a></div>
+<div class="top-menu-item"><a href="/docs/craft-uikit/index.html">craft-uikit</a></div>
+<div class="top-menu-item"><a href="/docs/craft-widget-navigationgroup/index.html">craft-widget-navigationgroup</a></div>
+<div class="top-menu-item"><a href="/docs/craft-widget-quicktools/index.html">craft-widget-quicktools</a></div>
+<div class="top-menu-item-github"><a href="https://github.com/craftkit" title="Github Project Page"><i class="fa fa-github" aria-hidden="true"></i></a></div>
+</div>
+
+
+<section class="readme">
+<article>
+
+<h1>Craft-UIKit</h1>
+
+<div style="display:flex;flex-direction:row;">
+
+<div>
+<p>Craft-UIKit is a JavaScript UI library for <strong>Inversion of Markup</strong>.</p>
+<p>Web application based on Inversion of Markup inverts Markup and JavaScript.<br>
+Markup should be fully encapsulated into the shadow element in JavaScript object.</p>
+<p>Markup principle something like this:</p>
+<pre class="prettyprint source lang-javascript"><code>&lt;Hello name=&quot;world&quot;>&lt;/Hello>
+</code></pre>
+<p>Inversion of Markup principle something like this:</p>
+<pre class="prettyprint source lang-javascript"><code>viewController.append(new Hello({name:&quot;world&quot;}));
+</code></pre>
+<p>Mobile application devplopers are more familiar with this way.</p>
+<p>Please visit github project page for more details.</p>
+</div>
+
+<pre class="prettyprint source" style="margin-left:88px;padding:44px;background-color:#333;border-radius: 30px;"><code style="background-color:#333;">console:
+
+> var hello_world = new HelloWorld();
+> hello_world.loadView();
+> document.body.appendChild(hello_world.view);
+
+> MyApp_HelloWorld_0
+HelloWorld {packagename: &quot;MyApp.HelloWorld&quot;, 
+  componentId: &quot;MyApp_HelloWorld_0&quot;, 
+  view: div#MyApp_HelloWorld_0, css: Array(1), …}
+
+> MyApp_HelloWorld_0.view
+&lt;div id=&quot;MyApp_HelloWorld_0&quot;>...&lt;/div>
+
+> MyApp_HelloWorld_0.shadow
+#shadow-root (open)
+
+> MyApp_HelloWorld_0.root
+&lt;div class=&quot;root&quot;>...&lt;/div>
+
+> MyApp_HelloWorld_0.css
+[style#MyApp_HelloWorld_0_1]
+
+> MyApp_HelloWorld_0.say()
+(say() is invoked -> show &quot;Hello World!&quot; in the page)
+</code></pre>
+
+</div>
+
+</article>
+</section>
+
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script src="scripts/jquery-3.1.1.min.js"></script>
+<script src="scripts/search.js"></script>
+<script src="scripts/collapse.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136310050-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-136310050-1');
+</script>
+
+</body>
+</html>
+

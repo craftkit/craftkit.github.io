@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>TipsPanel - Documentation</title>
+    
+    
+    
+    
+    
+    <meta property="og:title" content=""/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content=""/>
+    
+    <meta property="og:url" content=""/>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136310050-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-136310050-1');
+    </script>
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="padding-top:44px;">
+
+<style>
+.top-menu {
+	position:fixed;top:0px;left:0px;width:100%;height:44px;
+	display:flex;flex-direction:row;
+	background-color:rgba(102,0,102,0.90);
+	line-height:44px;font-size:18px;
+	color:rgba(255,255,255,0.90);
+	font-family:'Lucida Grande', 'Lucida Sans Unicode', arial, sans-serif;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.top-menu-item-top {
+	display:inline-block;padding-left:44px;padding-right:44px;cursor:pointer;
+}
+.top-menu-item-top:hover {
+	background-color:rgba(102,0,102,0.75);
+}
+.top-menu-item {
+	display:inline-block;padding-left:22px;padding-right:22px;cursor:pointer;
+}
+.top-menu-item:hover {
+	background-color:rgba(102,0,102,0.75);
+}
+.top-menu-item-top a {
+	color:rgba(255,255,255,0.90);
+}
+.top-menu-item a {
+	color:rgba(255,255,255,0.90);
+}
+.top-menu-item-github {
+	display:inline-block;padding-right:44px;margin-left:auto;cursor:pointer;font-size:24px;
+}
+.top-menu-item-github a {
+	color:rgba(255,255,255,0.90);
+}
+</style>
+<div class="top-menu">
+<div class="top-menu-item-top"><a href="/">Top</a></div>
+<div class="top-menu-item"><a href="/docs/craft-uikit/index.html">craft-uikit</a></div>
+<div class="top-menu-item"><a href="/docs/craft-widget-navigationgroup/index.html">craft-widget-navigationgroup</a></div>
+<div class="top-menu-item"><a href="/docs/craft-widget-quicktools/index.html">craft-widget-quicktools</a></div>
+<div class="top-menu-item-github"><a href="https://github.com/craftkit" title="Github Project Page"><i class="fa fa-github" aria-hidden="true"></i></a></div>
+</div>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav class="wrap"  style="margin-top:10px;">
+	<a class="appname" href='index.html'>QuickTools</a>
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    <h3>Packages</h3><ul><li class="packageDepth_0">Craft</li><li class="packageDepth_1">Widget</li><li class="packageDepth_2">QuickTools</li><li class="packageDepth_3"><a href="ActionPanel.html">ActionPanel</a><ul class='methods'><li data-type='method' style='display: none;'><a href="ActionPanel.html#setContent">setContent</a></li><li data-type='method' style='display: none;'><a href="ActionPanel.html#unloadView">unloadView</a></li><li data-type='method' style='display: none;'><a href="ActionPanel.html#showPanel">showPanel</a></li><li data-type='method' style='display: none;'><a href="ActionPanel.html#locatePanel">locatePanel</a></li><li data-type='method' style='display: none;'><a href="ActionPanel.html#hidePanel">hidePanel</a></li><li data-type='method' style='display: none;'><a href="ActionPanel.html#style">style</a></li><li data-type='method' style='display: none;'><a href="ActionPanel.html#template">template</a></li></ul></li><li class="packageDepth_3"><a href="ActionSheet.html">ActionSheet</a><ul class='methods'><li data-type='method' style='display: none;'><a href="ActionSheet.html#action">action</a></li><li data-type='method' style='display: none;'><a href="ActionSheet.html#closeActionSheet">closeActionSheet</a></li><li data-type='method' style='display: none;'><a href="ActionSheet.html#style">style</a></li><li data-type='method' style='display: none;'><a href="ActionSheet.html#template">template</a></li></ul></li><li class="packageDepth_3"><a href="IconButton.html">IconButton</a><ul class='methods'><li data-type='method' style='display: none;'><a href="IconButton.html#action">action</a></li><li data-type='method' style='display: none;'><a href="IconButton.html#style">style</a></li><li data-type='method' style='display: none;'><a href="IconButton.html#template">template</a></li></ul></li><li class="packageDepth_3"><a href="PlainButton.html">PlainButton</a><ul class='methods'><li data-type='method' style='display: none;'><a href="PlainButton.html#action">action</a></li><li data-type='method' style='display: none;'><a href="PlainButton.html#style">style</a></li><li data-type='method' style='display: none;'><a href="PlainButton.html#template">template</a></li></ul></li><li class="packageDepth_3"><a href="TipsPanel.html">TipsPanel</a><ul class='methods'><li data-type='method' style='display: none;'><a href="TipsPanel.html#closePanel">closePanel</a></li><li data-type='method' style='display: none;'><a href="TipsPanel.html#style">style</a></li><li data-type='method' style='display: none;'><a href="TipsPanel.html#template">template</a></li></ul></li><li class="packageDepth_3"><a href="TipsPanelable.html">TipsPanelable</a><ul class='methods'><li data-type='method' style='display: none;'><a href="TipsPanelable.html#viewDidLoad">viewDidLoad</a></li><li data-type='method' style='display: none;'><a href="TipsPanelable.html#hideTipsPanel">hideTipsPanel</a></li><li data-type='method' style='display: none;'><a href="TipsPanelable.html#setContent">setContent</a></li><li data-type='method' style='display: none;'><a href="TipsPanelable.html#setText">setText</a></li><li data-type='method' style='display: none;'><a href="TipsPanelable.html#showTipsPanel">showTipsPanel</a></li><li data-type='method' style='display: none;'><a href="TipsPanelable.html#locatePanel">locatePanel</a></li><li data-type='method' style='display: none;'><a href="TipsPanelable.html#style">style</a></li><li data-type='method' style='display: none;'><a href="TipsPanelable.html#template">template</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">TipsPanel</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+        TipsPanel
+        </h2>
+        
+            <div class="class-description"><p>TipsPanel : small tip on the element</p></div>
+        
+    
+</header>
+
+<article>
+    
+        <div class="container-overview">
+        
+            
+
+    
+    <h2>Constructor</h2>
+    
+
+    <h4 class="name" id="TipsPanel"><span class="type-signature"></span>new TipsPanel<span class="signature">(options)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="TipsPanel.js.html">TipsPanel.js</a>, <a href="TipsPanel.js.html#line16">line 16</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>BackButton constructor</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>options</p>
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>text</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>tip text</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        </div>
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Classes</h3>
+
+        <dl>
+            <dt><a href="TipsPanel.html">TipsPanel</a></dt>
+            <dd></dd>
+        </dl>
+    
+    
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id="closePanel"><span class="type-signature"></span>closePanel<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="TipsPanel.js.html">TipsPanel.js</a>, <a href="TipsPanel.js.html#line29">line 29</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Close tips view</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="style"><span class="type-signature">(protected) </span>style<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="TipsPanel.js.html">TipsPanel.js</a>, <a href="TipsPanel.js.html#line37">line 37</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>style</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="template"><span class="type-signature">(protected) </span>template<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="TipsPanel.js.html">TipsPanel.js</a>, <a href="TipsPanel.js.html#line59">line 59</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>template</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.0-dev</a> on Mon Mar 25 2019 07:19:20 GMT+0900 (Japan Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/jquery-3.1.1.min.js"></script>
+
+<script src="scripts/search.js"></script>
+
+
+<script src="scripts/collapse.js"></script>
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136310050-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-136310050-1');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>ActionPanel.js - Documentation</title>
+    
+    
+    
+    
+    
+    <meta property="og:title" content=""/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content=""/>
+    
+    <meta property="og:url" content=""/>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136310050-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-136310050-1');
+    </script>
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="padding-top:44px;">
+
+<style>
+.top-menu {
+	position:fixed;top:0px;left:0px;width:100%;height:44px;
+	display:flex;flex-direction:row;
+	background-color:rgba(102,0,102,0.90);
+	line-height:44px;font-size:18px;
+	color:rgba(255,255,255,0.90);
+	font-family:'Lucida Grande', 'Lucida Sans Unicode', arial, sans-serif;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.top-menu-item-top {
+	display:inline-block;padding-left:44px;padding-right:44px;cursor:pointer;
+}
+.top-menu-item-top:hover {
+	background-color:rgba(102,0,102,0.75);
+}
+.top-menu-item {
+	display:inline-block;padding-left:22px;padding-right:22px;cursor:pointer;
+}
+.top-menu-item:hover {
+	background-color:rgba(102,0,102,0.75);
+}
+.top-menu-item-top a {
+	color:rgba(255,255,255,0.90);
+}
+.top-menu-item a {
+	color:rgba(255,255,255,0.90);
+}
+.top-menu-item-github {
+	display:inline-block;padding-right:44px;margin-left:auto;cursor:pointer;font-size:24px;
+}
+.top-menu-item-github a {
+	color:rgba(255,255,255,0.90);
+}
+</style>
+<div class="top-menu">
+<div class="top-menu-item-top"><a href="/">Top</a></div>
+<div class="top-menu-item"><a href="/docs/craft-uikit/index.html">craft-uikit</a></div>
+<div class="top-menu-item"><a href="/docs/craft-widget-navigationgroup/index.html">craft-widget-navigationgroup</a></div>
+<div class="top-menu-item"><a href="/docs/craft-widget-quicktools/index.html">craft-widget-quicktools</a></div>
+<div class="top-menu-item-github"><a href="https://github.com/craftkit" title="Github Project Page"><i class="fa fa-github" aria-hidden="true"></i></a></div>
+</div>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav class="wrap"  style="margin-top:10px;">
+	<a class="appname" href='index.html'>QuickTools</a>
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    <h3>Packages</h3><ul><li class="packageDepth_0">Craft</li><li class="packageDepth_1">Widget</li><li class="packageDepth_2">QuickTools</li><li class="packageDepth_3"><a href="ActionPanel.html">ActionPanel</a><ul class='methods'><li data-type='method' style='display: none;'><a href="ActionPanel.html#setContent">setContent</a></li><li data-type='method' style='display: none;'><a href="ActionPanel.html#unloadView">unloadView</a></li><li data-type='method' style='display: none;'><a href="ActionPanel.html#showPanel">showPanel</a></li><li data-type='method' style='display: none;'><a href="ActionPanel.html#locatePanel">locatePanel</a></li><li data-type='method' style='display: none;'><a href="ActionPanel.html#hidePanel">hidePanel</a></li><li data-type='method' style='display: none;'><a href="ActionPanel.html#style">style</a></li><li data-type='method' style='display: none;'><a href="ActionPanel.html#template">template</a></li></ul></li><li class="packageDepth_3"><a href="ActionSheet.html">ActionSheet</a><ul class='methods'><li data-type='method' style='display: none;'><a href="ActionSheet.html#action">action</a></li><li data-type='method' style='display: none;'><a href="ActionSheet.html#closeActionSheet">closeActionSheet</a></li><li data-type='method' style='display: none;'><a href="ActionSheet.html#style">style</a></li><li data-type='method' style='display: none;'><a href="ActionSheet.html#template">template</a></li></ul></li><li class="packageDepth_3"><a href="IconButton.html">IconButton</a><ul class='methods'><li data-type='method' style='display: none;'><a href="IconButton.html#action">action</a></li><li data-type='method' style='display: none;'><a href="IconButton.html#style">style</a></li><li data-type='method' style='display: none;'><a href="IconButton.html#template">template</a></li></ul></li><li class="packageDepth_3"><a href="PlainButton.html">PlainButton</a><ul class='methods'><li data-type='method' style='display: none;'><a href="PlainButton.html#action">action</a></li><li data-type='method' style='display: none;'><a href="PlainButton.html#style">style</a></li><li data-type='method' style='display: none;'><a href="PlainButton.html#template">template</a></li></ul></li><li class="packageDepth_3"><a href="TipsPanel.html">TipsPanel</a><ul class='methods'><li data-type='method' style='display: none;'><a href="TipsPanel.html#closePanel">closePanel</a></li><li data-type='method' style='display: none;'><a href="TipsPanel.html#style">style</a></li><li data-type='method' style='display: none;'><a href="TipsPanel.html#template">template</a></li></ul></li><li class="packageDepth_3"><a href="TipsPanelable.html">TipsPanelable</a><ul class='methods'><li data-type='method' style='display: none;'><a href="TipsPanelable.html#viewDidLoad">viewDidLoad</a></li><li data-type='method' style='display: none;'><a href="TipsPanelable.html#hideTipsPanel">hideTipsPanel</a></li><li data-type='method' style='display: none;'><a href="TipsPanelable.html#setContent">setContent</a></li><li data-type='method' style='display: none;'><a href="TipsPanelable.html#setText">setText</a></li><li data-type='method' style='display: none;'><a href="TipsPanelable.html#showTipsPanel">showTipsPanel</a></li><li data-type='method' style='display: none;'><a href="TipsPanelable.html#locatePanel">locatePanel</a></li><li data-type='method' style='display: none;'><a href="TipsPanelable.html#style">style</a></li><li data-type='method' style='display: none;'><a href="TipsPanelable.html#template">template</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">ActionPanel.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>
+import * as Craft from 'craft-uikit';
+
+/** 
+ * ActionPanel : panel on the element  
+ * 
+ * NOTE:  
+ * This widget does not work well in mobile device mode of desktop browser, 
+ * because of UIEvent object in desktop browser does not have pageX/pageY.
+ * 
+ * NOTE:
+ * If your click target have margin or padding, you should adjust panel position by setting top_margin argument.
+ * This module does not treat target structure.
+ * 
+ * This widget requires touch(or click) event named as "ContentTapped" fired by Craft.Core.NotificationCenter.  
+ * Craft.UI.DefaultRootViewController supports it.
+ * 
+ * @packagename Craft.Widget.QuickTools.ActionPanel
+ * 
+ * @example
+ * 
+ * viewDidLoad(callback){
+ *     this.actionPanel = new Craft.Widget.QuickTools.ActionPanel();
+ *     this.actionPanel.loadView();
+ *     this.actionPanel.setContent(new PanelContent());
+ *     if(callback){ callback(); }
+ * }
+ * 
+ * showPanel(target){
+ *     this.actionPanel.showPanel({
+ *         target : target
+ *     });
+ * }
+ * 
+ * template(cid){
+ *     return `&lt;div onclick="${cid}.showPanel(this)">click me&lt;/div>`;
+ * }
+ * 
+ */
+export class ActionPanel extends Craft.UI.View {
+	
+	/**
+	 * BackButton constructor
+	 * 
+	 * @param {Object} options - options
+	 * @param {Element} options.target - click source element
+	 */
+	constructor(options){
+		super();
+		
+		this.packagename = 'Craft.Widget.QuickTools.ActionPanel';
+		
+		if( !options ){ options = {}; }
+		
+		this.target  = options.target;
+		this.content = options.content; // content
+		
+		this.right_margin  = 22; // default: save 22px at right
+		this.top_margin    = 0;  // default: no margin
+		this.bottom_margin = 7;  // default: save 7px at bottom
+		
+		this.listener_serial = ''; // listener with serial number
+	}
+	
+	/** 
+	 * Set inner content
+	 * 
+	 * @param {Craft.UI.View} content
+	 */
+	setContent(content){
+		if( !content.isViewLoaded ){
+			content.loadView();
+		}
+		this.content = content;
+		this.root.appendChild(content.view);
+	}
+	
+	/** 
+	 * Hide panel if the outside of the panel was tapped : work with ContentTapped event fired by Craft.Core.DefaultRootViewController
+	 * @private
+	 * @panel {UIEvent|MouseEvent} event - TouchEvent|MouseEvent
+	 */
+	handleTouch(event){
+		if( !event ){
+			// unexpected, but might be called from user program, force close panel and return.
+			this.hidePanel();
+			return false;
+		}
+		
+		let pageX = event.pageX;
+		let pageY = event.pageY;
+		
+		let panel_rect = this.view.getBoundingClientRect();
+		let panel_width = this.view.clientWidth;
+		let panel_height = this.view.clientHeight;
+		
+		if( panel_rect.left &lt; pageX &amp;&amp; pageX &lt; panel_rect.left + panel_width &amp;&amp; panel_rect.top &lt; pageY &amp;&amp; pageY &lt; panel_rect.top + panel_height ){
+			// the tap is inside of this panel
+			return false;
+		}
+		// the tap is outside of this panel
+		this.hidePanel();
+		return false; // false: no more event propagation, true: continue to propagate event
+	}
+	
+	/** 
+	 * Clean up memory
+	 */
+	unloadView(){
+		this.content.unloadView();
+		super.unloadView();
+	}
+	
+	/** 
+	 * Show panel
+	 * 
+	 * @param {Object} options - options
+	 * @param {Element} options.target - place on the element (optional)
+	 * @param {Number} options.right_margin - margin right side (optional)
+	 * @param {Number} options.left_margin - margin left side (optional)
+	 */
+	showPanel(options){
+		this.target = options.target || this.target; // clicked element
+		
+		this.right_margin  = options.right_margin  || this.right_margin;
+		this.top_margin    = options.top_margin    || this.top_margin;
+		this.bottom_margin = options.bottom_margin || this.bottom_margin;
+		
+		this.content.viewWillAppear();
+		Craft.Core.Context.getRootViewController().appendView(this);
+		this.content.viewDidAppear();
+		
+		this.locatePanel();
+		
+		this.listener_serial = Craft.Core.NotificationCenter.listen("ContentTapped",(ev) => {
+			this.handleTouch(ev);
+		});
+		this.listener_serial = Craft.Core.NotificationCenter.listen("Craft.Widget.QuickTools.ActionPanel.hidePanel",(ev) => {
+			this.hidePanel(ev);
+		});
+		Craft.Core.Transition.animate({
+			element    : this.view,
+			properties : { opacity: 1 },
+			duration   : 50,
+		});
+	}
+	
+	/** 
+	 * locate panel
+	 */
+	locatePanel(){
+		let target_rect = this.target.getBoundingClientRect(); // this.content is the click target
+		
+		let panel_posY = target_rect.bottom;
+		let panel_posX = target_rect.left;
+		
+		this.view.style['top']  = String( panel_posY )+'px';
+		this.view.style['left'] = String( panel_posX )+'px';
+		
+		// adjust to the screen
+		let doc_width = window.innerWidth;
+		let panel_width = this.view.clientWidth;
+		if( panel_posX + panel_width > doc_width ){
+			this.view.style['left'] = String( doc_width - panel_width )+'px';
+		}
+		let doc_height = window.innerHeight;
+		let panel_height = this.view.clientHeight;
+		if( panel_posY + panel_height > doc_height ){
+			this.view.style['top'] = String( target_rect.top - panel_height )+'px';
+		}
+	}
+	
+	/** 
+	 * Hide panel
+	 */
+	hidePanel(){
+		Craft.Core.NotificationCenter.remove("ContentTapped",this.listener_serial);
+		Craft.Core.Transition.animate({
+			element    : this.view,
+			properties : { opacity: 1 },
+			duration   : 50,
+			callback   : () => {
+				this.content.viewWillDisappear();
+				this.view.remove();
+				this.content.viewDidDisappear();
+			}
+		});
+	}
+	
+	/** 
+	 * style
+	 * @protected
+	 */
+	style(componentId){
+		return `
+			:host {
+				display: block;
+				box-sizing: border-box;
+				position: absolute;
+				top: 0px;
+				color: #aaa;
+				background-color: #fff;
+				border-radius: 3px;
+				-webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+				-moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+				box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+				-webkit-overflow-scrolling: touch;
+				overflow: auto;
+				opacity: 0;
+			}
+		`;
+	}
+	
+	/** 
+	 * template
+	 * @protected
+	 */
+	template(componentId){
+		return `
+			&lt;div class="root">&lt;/div>
+		`;
+	}
+
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.0-dev</a> on Mon Mar 25 2019 07:19:20 GMT+0900 (Japan Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/jquery-3.1.1.min.js"></script>
+
+<script src="scripts/search.js"></script>
+
+
+<script src="scripts/collapse.js"></script>
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136310050-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-136310050-1');
+</script>
+
+</body>
+</html>
