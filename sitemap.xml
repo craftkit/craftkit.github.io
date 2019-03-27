@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://craftkit.dev/</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/index.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-navigationgroup/index.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-quicktools/index.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/Craft.Core.Bootstrap.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/Component.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/Craft.Core.ComponentStack.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/Craft.Core.Context.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/Craft.Core.Defaults.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/Craft.Core.Gesture.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/Craft.Core.KeyboardManager.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/Craft.Core.NotificationCenter.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/StickComponent.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/Craft.Core.Transition.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/DefaultRootViewController.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/DefaultViewController.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/Craft.UI.Device.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/ModalViewController.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/View.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/global.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-navigationgroup/ActionButton.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-navigationgroup/BackButton.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-navigationgroup/CloseButton.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-navigationgroup/Footer.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-navigationgroup/Header.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-navigationgroup/MenuButton.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-navigationgroup/Page.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-navigationgroup/Sidemenu.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-navigationgroup/ViewController.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-quicktools/ActionPanel.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-quicktools/ActionSheet.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-quicktools/IconButton.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-quicktools/PlainButton.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-quicktools/TipsPanel.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-quicktools/TipsPanelable.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/Core_Bootstrap.js.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/Core_Component.js.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/Core_ComponentStack.js.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/Core_Context.js.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/Core_Defaults.js.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/Core_Gesture.js.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/Core_KeyboardManager.js.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/Core_NotificationCenter.js.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/Core_StickComponent.js.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/Core_Transition.js.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/UI_DefaultRootViewController.js.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/UI_DefaultViewController.js.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/UI_Device.js.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/UI_ModalViewController.js.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-uikit/UI_View.js.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-navigationgroup/ActionButton.js.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-navigationgroup/BackButton.js.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-navigationgroup/CloseButton.js.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-navigationgroup/Footer.js.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-navigationgroup/Header.js.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-navigationgroup/MenuButton.js.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-navigationgroup/Page.js.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-navigationgroup/Sidemenu.js.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-navigationgroup/ViewController.js.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-quicktools/ActionPanel.js.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-quicktools/ActionSheet.js.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-quicktools/IconButton.js.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-quicktools/PlainButton.js.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-quicktools/TipsPanel.js.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://craftkit.dev/docs/craft-widget-quicktools/TipsPanelable.js.html</loc>
+  <lastmod>2019-03-24T23:41:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
