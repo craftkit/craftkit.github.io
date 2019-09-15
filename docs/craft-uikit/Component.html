@@ -111,7 +111,7 @@
         Component
         </h2>
         
-            <div class="class-description"><p>Component super class.</p></div>
+            <div class="class-description"><p>Super class for all Craft-UIKit Components.</p></div>
         
     
 </header>
@@ -253,7 +253,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line37">line 37</a>
+        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line38">line 38</a>
     </li></ul></dd>
     
 
@@ -294,9 +294,9 @@
 
 <div class="description">
     <p>Initialize instance values</p>
-<p>You should never call directly and override this method.<br>
-This is a part of <code>loadView</code> the initialization processs, but separated for readability.<br>
-Use <code>viewDidLoad</code> for your additional initialization.</p>
+<p>You should never call this method directly, and should never override this method.<br>
+This is a part of <code>loadView</code> the initialization processs of Component, but separated for readability.</p>
+<p>Use <code>viewDidLoad</code> for your additional initialization.</p>
 <p>(highly recommended to be implemented as synchronous)</p>
 </div>
 
@@ -344,7 +344,7 @@ Use <code>viewDidLoad</code> for your additional initialization.</p>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line56">line 56</a>
+        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line57">line 57</a>
     </li></ul></dd>
     
 
@@ -433,7 +433,7 @@ Use <code>viewDidLoad</code> for your additional initialization.</p>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line65">line 65</a>
+        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line67">line 67</a>
     </li></ul></dd>
     
 
@@ -473,8 +473,8 @@ Use <code>viewDidLoad</code> for your additional initialization.</p>
 
 
 <div class="description">
-    <p>Render template and get the shadow DOM.<br>
-If you call this method, your shadow dom will be cleared. (including scoped style)</p>
+    <p>Render template, and get the shadow DOM.</p>
+<p>If you call this method, this.root(including scoped style) will be cleared.</p>
 </div>
 
 
@@ -521,7 +521,7 @@ If you call this method, your shadow dom will be cleared. (including scoped styl
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line80">line 80</a>
+        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line82">line 82</a>
     </li></ul></dd>
     
 
@@ -608,7 +608,7 @@ If you call this method, your shadow dom will be cleared. (including scoped styl
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line92">line 92</a>
+        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line94">line 94</a>
     </li></ul></dd>
     
 
@@ -648,7 +648,7 @@ If you call this method, your shadow dom will be cleared. (including scoped styl
 
 
 <div class="description">
-    <p>Load style from text and append to the shadow root</p>
+    <p>Load style from text, and append it to the shadow root.</p>
 </div>
 
 
@@ -767,7 +767,7 @@ If you call this method, your shadow dom will be cleared. (including scoped styl
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line109">line 109</a>
+        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line111">line 111</a>
     </li></ul></dd>
     
 
@@ -856,7 +856,7 @@ If you call this method, your shadow dom will be cleared. (including scoped styl
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line143">line 143</a>
+        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line145">line 145</a>
     </li></ul></dd>
     
 
@@ -901,16 +901,16 @@ If you call this method, your shadow dom will be cleared. (including scoped styl
 or whenever you want to use the instance of this component that is not yet ready (isViewLoaded is false).</p>
 <p>You should not never override this method.<br>
 Use <code>viewDidLoad</code> for your additional initialization.</p>
-<p>If you have to implement your own loadView method, you must implement yours as:</p>
+<p>If you have to implement your own <code>loadView</code> method, you must implement yours as:</p>
 <ol>
 <li>this.init();</li>
 <li>this.render();<br>
 (here, you can access to the RootView of this component)<br>
-(your component setup in here)</li>
+(your component setup is in here)</li>
 <li>set isViewLoaded to true.</li>
 <li>call this.viewDidLoad(callback);</li>
 </ol>
-<p>and incomming callback should be passed to the viewDidLoad.</p>
+<p>and incomming callback should be passed to the <code>viewDidLoad</code>.</p>
 <p>(this is highly recommended to be implemented as synchronous)</p>
 </div>
 
@@ -1007,7 +1007,7 @@ Use <code>viewDidLoad</code> for your additional initialization.</p>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line155">line 155</a>
+        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line157">line 157</a>
     </li></ul></dd>
     
 
@@ -1143,7 +1143,7 @@ Use <code>viewDidLoad</code> for your additional initialization.</p>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line173">line 173</a>
+        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line175">line 175</a>
     </li></ul></dd>
     
 
@@ -1184,7 +1184,7 @@ Use <code>viewDidLoad</code> for your additional initialization.</p>
 
 <div class="description">
     <p>Lifecycle method:<br>
-Called at the end of loadView. Component instance loaded and ready to use this.view.</p>
+Called at the end of <code>loadView</code>. Component instance loaded and ready to use this.view.</p>
 <p>You have to call callback at the end of yours.</p>
 </div>
 
@@ -1281,7 +1281,7 @@ Called at the end of loadView. Component instance loaded and ready to use this.v
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line188">line 188</a>
+        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line190">line 190</a>
     </li></ul></dd>
     
 
@@ -1322,10 +1322,10 @@ Called at the end of loadView. Component instance loaded and ready to use this.v
 
 <div class="description">
     <p>Lifecycle method:<br>
-Called just before appending this.view to the parent.</p>
+Called just before appending <code>this.view</code> to the parent.</p>
 <p>You <em>must</em> call callback at the end of yours.</p>
 <p>Component RootView is now on the screen (in the browser DOM tree),<br>
-and concrete ViewController should ensure to be able to access this.view via global DOM tree after here.</p>
+and concrete ViewController should ensure to be able to access <code>this.view</code> via global DOM tree after here.</p>
 </div>
 
 
@@ -1421,7 +1421,7 @@ and concrete ViewController should ensure to be able to access this.view via glo
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line201">line 201</a>
+        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line203">line 203</a>
     </li></ul></dd>
     
 
@@ -1462,8 +1462,8 @@ and concrete ViewController should ensure to be able to access this.view via glo
 
 <div class="description">
     <p>Lifecycle method:<br>
-Called just after this.view appended to the parent.<br>
-After this method, you can access the compoenent's RootView via document.getElementByID and some other query selectors.</p>
+Called just after <code>this.view</code> appended to the parent.<br>
+After this method, you can access the compoenent's RootView via <code>document.getElementByID</code> and some other query selectors.</p>
 <p>You have to call callback at the end of yours.</p>
 </div>
 
@@ -1560,7 +1560,7 @@ After this method, you can access the compoenent's RootView via document.getElem
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line214">line 214</a>
+        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line216">line 216</a>
     </li></ul></dd>
     
 
@@ -1601,8 +1601,8 @@ After this method, you can access the compoenent's RootView via document.getElem
 
 <div class="description">
     <p>Lifecycle method:<br>
-Called just before removing this.view from its parent.<br>
-You may remove your listener defined in viewWillAppear or viewDidAppear.</p>
+Called just before removing <code>this.view</code> from its parent.<br>
+You may remove your listener defined in <code>viewWillAppear</code> or <code>viewDidAppear</code>.</p>
 <p>You have to call callback at the end of yours.</p>
 </div>
 
@@ -1699,7 +1699,7 @@ You may remove your listener defined in viewWillAppear or viewDidAppear.</p>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line226">line 226</a>
+        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line228">line 228</a>
     </li></ul></dd>
     
 
@@ -1740,7 +1740,7 @@ You may remove your listener defined in viewWillAppear or viewDidAppear.</p>
 
 <div class="description">
     <p>Lifecycle method:<br>
-Called just after this.view removed from its parent.</p>
+Called just after <code>this.view</code> removed from its parent.</p>
 <p>You have to call callback at the end of yours.</p>
 </div>
 
@@ -1837,7 +1837,7 @@ Called just after this.view removed from its parent.</p>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line235">line 235</a>
+        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line241">line 241</a>
     </li></ul></dd>
     
 
@@ -1878,6 +1878,9 @@ Called just after this.view removed from its parent.</p>
 
 <div class="description">
     <p>Show this component.</p>
+<p>TODO:<br>
+this.view.style.display should cascade original definition.<br>
+It may be <code>inline-block</code>.</p>
 </div>
 
 
@@ -1973,7 +1976,7 @@ Called just after this.view removed from its parent.</p>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line246">line 246</a>
+        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line252">line 252</a>
     </li></ul></dd>
     
 
@@ -2111,7 +2114,7 @@ Called just after this.view removed from its parent.</p>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line282">line 282</a>
+        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line288">line 288</a>
     </li></ul></dd>
     
 
@@ -2363,7 +2366,7 @@ panel.appendView({
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line310">line 310</a>
+        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line316">line 316</a>
     </li></ul></dd>
     
 
@@ -2452,7 +2455,7 @@ panel.appendView({
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line336">line 336</a>
+        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line342">line 342</a>
     </li></ul></dd>
     
 
@@ -2493,7 +2496,7 @@ panel.appendView({
 
 <div class="description">
     <p>Remove a sub-view from this.view</p>
-<p><code>removeView</code> does not call unloadView of the removed view.<br>
+<p><code>removeView</code> does not call <code>unloadView</code> of the removed view.<br>
 When to parge the component is a responsibility of your component consumer.</p>
 </div>
 
@@ -2673,7 +2676,7 @@ btn.view.remove();</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line358">line 358</a>
+        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line364">line 364</a>
     </li></ul></dd>
     
 
@@ -2760,7 +2763,7 @@ btn.view.remove();</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line377">line 377</a>
+        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line383">line 383</a>
     </li></ul></dd>
     
 
@@ -2903,7 +2906,7 @@ btn.view.remove();</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line386">line 386</a>
+        <a href="Core_Component.js.html">Core/Component.js</a>, <a href="Core_Component.js.html#line392">line 392</a>
     </li></ul></dd>
     
 
@@ -3043,7 +3046,7 @@ btn.view.remove();</code></pre>
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.0-dev</a> on Mon Mar 25 2019 07:19:10 GMT+0900 (Japan Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.0-dev</a> on Sun Sep 15 2019 17:58:31 GMT+0900 (Japan Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>
