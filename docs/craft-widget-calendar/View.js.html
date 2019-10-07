@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>View.js - Documentation</title>
+    
+    
+    
+    
+    
+    <meta property="og:title" content=""/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content=""/>
+    
+    <meta property="og:url" content=""/>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136310050-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-136310050-1');
+    </script>
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="padding-top:44px;">
+
+<style>
+.top-menu {
+	position:fixed;top:0px;left:0px;width:100%;height:44px;
+	display:flex;flex-direction:row;
+	background-color:rgba(102,0,102,0.90);
+	line-height:44px;font-size:18px;
+	color:rgba(255,255,255,0.90);
+	font-family:'Lucida Grande', 'Lucida Sans Unicode', arial, sans-serif;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.top-menu-item-top {
+	display:inline-block;padding-left:44px;padding-right:44px;cursor:pointer;
+}
+.top-menu-item-top:hover {
+	background-color:rgba(102,0,102,0.75);
+}
+.top-menu-item {
+	display:inline-block;padding-left:22px;padding-right:22px;cursor:pointer;
+}
+.top-menu-item:hover {
+	background-color:rgba(102,0,102,0.75);
+}
+.top-menu-item-top a {
+	color:rgba(255,255,255,0.90);
+}
+.top-menu-item a {
+	color:rgba(255,255,255,0.90);
+}
+.top-menu-item-github {
+	display:inline-block;padding-right:44px;margin-left:auto;cursor:pointer;font-size:24px;
+}
+.top-menu-item-github a {
+	color:rgba(255,255,255,0.90);
+}
+</style>
+<div class="top-menu">
+<div class="top-menu-item-top"><a href="/">Top</a></div>
+<div class="top-menu-item"><a href="/docs/craft-uikit/index.html">craft-uikit</a></div>
+<div class="top-menu-item">
+	craft-widget-
+	<select id="widgetlink" onchange="var val=document.querySelector('#widgetlink').value; if(val){location.href=val;}">
+		<option value="">-</option>
+		<option value="/docs/craft-widget-navigationgroup/index.html">navigationgroup</option>
+		<option value="/docs/craft-widget-quicktools/index.html">quicktools</option>
+		<option value="/docs/craft-widget-calendar/index.html">calendar</option>
+	</select>
+</div>
+<div class="top-menu-item-github"><a href="https://github.com/craftkit" title="Github Project Page"><i class="fa fa-github" aria-hidden="true"></i></a></div>
+</div>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav class="wrap"  style="margin-top:10px;">
+	<a class="appname" href='index.html'>Calendar</a>
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    <h3>Packages</h3><ul><li class="packageDepth_0">Craft</li><li class="packageDepth_1">Widget</li><li class="packageDepth_2">Calendar</li><li class="packageDepth_3"><a href="Day.html">Day</a><ul class='methods'><li data-type='method' style='display: none;'><a href="Day.html#click">click</a></li><li data-type='method' style='display: none;'><a href="Day.html#style">style</a></li><li data-type='method' style='display: none;'><a href="Day.html#template">template</a></li></ul></li><li class="packageDepth_3"><a href="Month.html">Month</a><ul class='methods'><li data-type='method' style='display: none;'><a href="Month.html#build">build</a></li><li data-type='method' style='display: none;'><a href="Month.html#viewDidLoad">viewDidLoad</a></li><li data-type='method' style='display: none;'><a href="Month.html#style">style</a></li><li data-type='method' style='display: none;'><a href="Month.html#template">template</a></li></ul></li><li class="packageDepth_3"><a href="Craft.Widget.Calendar.StyleSheet.html">StyleSheet</a></li><li class="packageDepth_3"><a href="View.html">View</a><ul class='methods'><li data-type='method' style='display: none;'><a href="View.html#viewDidLoad">viewDidLoad</a></li><li data-type='method' style='display: none;'><a href="View.html#prev">prev</a></li><li data-type='method' style='display: none;'><a href="View.html#next">next</a></li><li data-type='method' style='display: none;'><a href="View.html#updateHeader">updateHeader</a></li><li data-type='method' style='display: none;'><a href="View.html#style">style</a></li><li data-type='method' style='display: none;'><a href="View.html#template">template</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">View.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>
+import * as Craft from 'craft-uikit';
+
+import { Month } from './Month.js';
+import { Day } from './Day.js';
+import { StyleSheet } from './StyleSheet.js';
+
+/** 
+ * View
+ * 
+ * View is a Facade for calendar elements.
+ * 
+ * And also, View and its sub-class has responsibility for layouting Calendar and handling event like: "go to next month".
+ * 
+ * @packagename Craft.Widget.Calendar.View
+ * 
+ * @example
+ * 
+ * // sample of Calendar consumer:
+ * 
+ * class Page extends Craft.UI.DefaultRootViewController {
+ *     
+ *     viewDidLoad(callback){
+ *         this.calendar = new Craft.Widget.Calendar.View({
+ *             yyyy     : '2020',
+ *             mm       : '07',
+ *             delegate : this,
+ *             Day      : Craft.Widget.Calendar.Day,
+ *         });
+ *         this.appendView(this.calendar);
+ *     }
+ *     
+ *     loadCalendarMetaDataFor(yyyy,mm,callback){
+ *         callback({ '2020-07-15' : {class:'holiday'} });
+ *     }
+ *     
+ *     handleSelectCalendarMonth(month){
+ *         loadCalendarMetaDataFor(month.yyyy,month.mm, (meta) => {
+ *             Object.keys(meta).forEach( iso => {
+ *                 let day = this.calendar.month.index[iso] // get Day object (skip checking Day existence)
+ *                 day.classes.push(meta[iso].class);       // if hit, the meta data should have class 'holiday'
+ *                 day.renderView();                        // ok, lets update view
+ *             });
+ *         });
+ *     }
+ *     
+ *     handleSelectCalendarDay(day){
+ *         window.location = `//${day.iso}.html`; // go to selected page
+ *     }
+ * }
+ * 
+ * // sample of customized View
+ * 
+ * class MyCalendarView extends Craft.Widget.Calendar.View {
+ *     viewDidLoad(callback){
+ *         this.appendView({ target:this.shadow.getElementById('navi'), component:new MyPrev({delegate:this}) });
+ *         this.appendView({ target:this.shadow.getElementById('navi'), component:new MyNext({delegate:this}) });
+ *         super.viewDidLoad(callback);
+ *     }
+ *     updateHeader(){
+ *         this.shadow.getElementById('header').innerHTML = this.month.yyyy + '/' + this.month.mm; // YYYY/MM instead of default YYYY-MM
+ *     }
+ *     template(componentId){
+ *         return `
+ *             &lt;div class="root">
+ *                 &lt;div id="header" class="header">&lt;/div>
+ *                 &lt;div id="month" class="month">&lt;/div>
+ *                 &lt;div id="navi" class="navi">&lt;/div>
+ *             &lt;/div>
+ *         `;
+ *     }
+ * }
+ * 
+ * class MyPrev extends Craft.UI.View {
+ *     constructor(options){
+ *         super();
+ *         this.delegate = options.delegate;
+ *     }
+ *     template(componentId){
+ *         return `
+ *             &lt;div class="root" onclick="${componentId}.delegate.prev();"> ＜${componentId}.month.prev_month.format('MM') &lt;/div>
+ *         `;
+ *     }
+ * }
+ * 
+ * class MyNext extends Craft.UI.View {
+ *     template(componentId){
+ *         return `
+ *             &lt;div class="root" onclick="${componentId}.delegate.next();"> ${componentId}.month.next_month.format('MM')＞ &lt;/div>
+ *         `;
+ *     }
+ * }
+ * 
+ */
+export class View extends Craft.UI.View {
+	
+	/**
+	 * Calendar constructor
+	 * 
+	 * @param {Object} options - options
+	 * @param {String} options.yyyy - Year
+	 * @param {String} options.mm - Month
+	 * @param {Object} options.delegate - Calendar event handler
+	 * @param {Craft.Widget.Calendar.Day} options.Day - Day class (optional)
+	 */
+	constructor(options){
+		super();
+		this.packagename = 'Craft.Widget.Calendar.View';
+		if( !options ){ options = {}; }
+		
+		this.delegate   = options.delegate;
+		this.dayClass   = options.Day || Day;
+		this.styleSheet = options.StyleSheet || StyleSheet;
+		
+		if( Number(options.yyyy) ){
+			this.yyyy = ('0000'+String(options.yyyy)).slice(-4);
+		}else{
+			this.yyyy = moment().format('YYYY');
+		}
+		
+		if( Number(options.mm) ){
+			this.mm = ('00'+String(options.mm)).slice(-2);
+		}else{
+			this.mm = moment().format('MM');
+		}
+		
+		this.index = {}; // { YYYY-MM : Month object }
+		
+		let this_month = new Month({
+			delegate   : this.delegate,
+			yyyy       : this.yyyy,
+			mm         : this.mm,
+			Day        : this.dayClass,
+			StyleSheet : this.styleSheet,
+		});
+		this.month = this_month;
+		this.index[ this.yyyy + '-' + this.mm ] = this.month;
+	}
+	
+	/**
+	 * Lifecycle method : viewDidLoad
+	 * 
+	 * Create Month.
+	 * 
+	 * @protected
+	 */
+	viewDidLoad(callback){
+		this.delegate.handleSelectCalendarMonth(this.index[ this.yyyy + '-' + this.mm ]);
+		
+		this.appendView({
+			target    : this.shadow.getElementById('month'),
+			component : this.index[ this.yyyy + '-' + this.mm ]
+		});
+		
+		this.updateHeader();
+		
+		if(callback){ callback(); }
+	}
+	
+	/**
+	 * move to previous month
+	 * @public
+	 */
+	prev(){
+		let prev_month = this.month.prev_month;
+		let this_month = '';
+		let prev_month_yyyy = prev_month.format('YYYY');
+		let prev_month_mm   = prev_month.format('MM');
+		let prev_month_yyyymm = prev_month_yyyy + '-' + prev_month_mm
+		if( this.index[ prev_month_yyyymm ] ){
+			this_month = this.index[ prev_month_yyyymm ];
+		}else{
+			this_month = new Month({
+				delegate   : this,
+				yyyy       : prev_month_yyyy,
+				mm         : prev_month_mm,
+				Day        : this.dayClass,
+				StyleSheet : this.styleSheet,
+			});
+			this.index[ prev_month_yyyymm ] = this_month;
+		}
+		this.removeView(this.month);
+		
+		this.delegate.handleSelectCalendarMonth(this_month);
+		
+		this.month = this_month;
+		this.appendView({
+			target    : this.shadow.getElementById('month'),
+			component : this.month
+		});
+		
+		this.updateHeader();
+	}
+	
+	/**
+	 * move to next month
+	 * @public
+	 */
+	next(){
+		let next_month = this.month.next_month;
+		let this_month = '';
+		let next_month_yyyy = next_month.format('YYYY');
+		let next_month_mm   = next_month.format('MM');
+		let next_month_yyyymm = next_month_yyyy + '-' + next_month_mm
+		if( this.index[ next_month_yyyymm ] ){
+			this_month = this.index[ next_month_yyyymm ];
+		}else{
+			this_month = new Month({
+				delegate   : this,
+				yyyy       : next_month_yyyy,
+				mm         : next_month_mm,
+				Day        : this.dayClass,
+				StyleSheet : this.styleSheet,
+			});
+			this.index[ next_month_yyyymm ] = this_month;
+		}
+		this.removeView(this.month);
+		
+		this.delegate.handleSelectCalendarMonth(this_month);
+		
+		this.month = this_month;
+		this.appendView({
+			target    : this.shadow.getElementById('month'),
+			component : this.month
+		});
+		this.delegate.handleSelectCalendarMonth(this_month);
+		
+		this.updateHeader();
+	}
+	
+	/** 
+	 * update Header
+	 * 
+	 * Should be called just after you change month.
+	 * This is default behavior. To implement your own header design, override this method.
+	 * 
+	 * @public
+	 */
+	updateHeader(){
+		this.shadow.getElementById('header').innerHTML = this.month.iso;
+	}
+	
+	/** 
+	 * style
+	 * @protected
+	 */
+	style(componentId){
+		return this.styleSheet.calendar;
+	}
+	
+	/** 
+	 * template
+	 * @protected
+	 */
+	template(componentId){
+		return `
+			&lt;div class="root">
+				&lt;div id="header" class="header">&lt;/div>
+				&lt;div id="month" class="month">&lt;/div>
+				&lt;div id="navi" class="navi">
+					&lt;div id="prev" class="prev" onclick="Craft.Core.ComponentStack.get('${componentId}').prev();"> ← &lt;i class="fa fa-arrow-left fa-fw">&lt;/i>&lt;/div>
+					&lt;div id="next" class="next" onclick="Craft.Core.ComponentStack.get('${componentId}').next();"> → &lt;i class="fa fa-arrow-right fa-fw">&lt;/i>&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		`;
+	}
+
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.0-dev</a> on Mon Oct 07 2019 17:57:43 GMT+0900 (Japan Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/jquery-3.1.1.min.js"></script>
+
+<script src="scripts/search.js"></script>
+
+
+<script src="scripts/collapse.js"></script>
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136310050-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-136310050-1');
+</script>
+
+</body>
+</html>
