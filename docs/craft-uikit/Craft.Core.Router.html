@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>Defaults - Documentation</title>
+    <title>Router - Documentation</title>
     
     
     
@@ -102,7 +102,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">Defaults</h1>
+    <h1 class="page-title">Router</h1>
     
 
     
@@ -115,7 +115,7 @@
 <header>
     
         <h2>
-        Defaults
+        Router
         </h2>
         
     
@@ -132,7 +132,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Core_Defaults.js.html">Core/Defaults.js</a>, <a href="Core_Defaults.js.html#line2">line 2</a>
+        <a href="Core_Router.js.html">Core/Router.js</a>, <a href="Core_Router.js.html#line2">line 2</a>
     </li></ul></dd>
     
 
@@ -171,14 +171,8 @@
 
 
             
-                <div class="description"><p>Application default variables.</p></div>
+                <div class="description"><p>Router interface</p></div>
             
-
-            
-                <h3>Example</h3>
-                
-    <pre class="prettyprint"><code>Craft.Core.Defaults.BASE_DIV_NAME = 'CraftRoot';
-Craft.Core.Defaults.ALLOW_COMPONENT_SHORTCUT = true;</code></pre>
 
             
         
@@ -198,12 +192,18 @@ Craft.Core.Defaults.ALLOW_COMPONENT_SHORTCUT = true;</code></pre>
     
 
     
-        <h3 class="subsection-title">Members</h3>
+
+    
+        <h3 class="subsection-title">Methods</h3>
 
         
             
-<h4 class="name" id=".BASE_DIV_NAME"><span class="type-signature">(static) </span>BASE_DIV_NAME<span class="type-signature"></span></h4>
 
+    
+
+    <h4 class="name" id=".route"><span class="type-signature">(static) </span>route<span class="signature">(event, launch)</span><span class="type-signature"></span></h4>
+
+    
 
 
 
@@ -213,7 +213,7 @@ Craft.Core.Defaults.ALLOW_COMPONENT_SHORTCUT = true;</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Core_Defaults.js.html">Core/Defaults.js</a>, <a href="Core_Defaults.js.html#line19">line 19</a>
+        <a href="Core_Router.js.html">Core/Router.js</a>, <a href="Core_Router.js.html#line13">line 13</a>
     </li></ul></dd>
     
 
@@ -253,8 +253,7 @@ Craft.Core.Defaults.ALLOW_COMPONENT_SHORTCUT = true;</code></pre>
 
 
 <div class="description">
-    <p>Element.id of the root element.<br>
-It is recommended to use default (CraftRoot).</p>
+    <p>Router interface</p>
 </div>
 
 
@@ -263,76 +262,91 @@ It is recommended to use default (CraftRoot).</p>
 
 
 
-    <h5>Example</h5>
+
+
+
+
+    <h5>Parameters:</h5>
     
-    <pre class="prettyprint"><code>// at your bootloader
-Craft.Core.Defaults.BASE_DIV_NAME = 'ROOT';
 
-// at any place
-let rootElement = document.getElementById(Craft.Core.Defaults.BASE_DIV_NAME);
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
 
-// if your RootViewController is managed by Craft.Core.Context, you may get the same result by:
-let rootElement = Craft.Core.Contest.getRootElement();</code></pre>
-
-
+        <th>Type</th>
 
         
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
             
-<h4 class="name" id=".ALLOW_COMPONENT_SHORTCUT"><span class="type-signature">(static) </span>ALLOW_COMPONENT_SHORTCUT<span class="type-signature"></span></h4>
+                <td class="name"><code>event</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">PopStateEvent</span>
 
 
+            
+            </td>
 
+            
 
+            
 
-<dl class="details">
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Core_Defaults.js.html">Core/Defaults.js</a>, <a href="Core_Defaults.js.html#line40">line 40</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
+            <td class="description last"><p>PopStateEvent</p></td>
+        </tr>
 
     
 
-    
+        <tr>
+            
+                <td class="name"><code>launch</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>true if this is the first launch, or access from out side of application history scope caused by browser back/foward</p></td>
+        </tr>
 
     
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
+    </tbody>
+</table>
 
 
 
 
 
-<div class="description">
-    <p>Whether to use component shortcut.</p>
-<p>True to set <code>window['componentId'] = component</code>, to be able to use <code>${componentId}.method()</code> in template.<br>
-This is set to false by default, but it is recommended to set to true at the start of your application bootloader.</p>
-</div>
+
+
+
+
+
+
 
 
 
@@ -342,8 +356,6 @@ This is set to false by default, but it is recommended to set to true at the sta
 
 
         
-    
-
     
 
     
