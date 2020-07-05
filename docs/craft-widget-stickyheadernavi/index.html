@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>Home - Documentation</title>
+    
+    
+    
+    
+    
+    <meta property="og:title" content=""/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content=""/>
+    
+    <meta property="og:url" content=""/>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136310050-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-136310050-1');
+    </script>
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="padding-top:44px;">
+
+<style>
+.top-menu {
+	position:fixed;top:0px;left:0px;width:100%;height:44px;
+	display:flex;flex-direction:row;
+	background-color:rgba(102,0,102,0.90);
+	line-height:44px;font-size:18px;
+	color:rgba(255,255,255,0.90);
+	font-family:'Lucida Grande', 'Lucida Sans Unicode', arial, sans-serif;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.top-menu-item-top {
+	display:inline-block;padding-left:44px;padding-right:44px;cursor:pointer;
+}
+.top-menu-item-top:hover {
+	background-color:rgba(102,0,102,0.75);
+}
+.top-menu-item {
+	display:inline-block;padding-left:22px;padding-right:22px;cursor:pointer;
+}
+.top-menu-item:hover {
+	background-color:rgba(102,0,102,0.75);
+}
+.top-menu-item-top a {
+	color:rgba(255,255,255,0.90);
+}
+.top-menu-item a {
+	color:rgba(255,255,255,0.90);
+}
+.top-menu-item-github {
+	display:inline-block;padding-right:44px;margin-left:auto;cursor:pointer;font-size:24px;
+}
+.top-menu-item-github a {
+	color:rgba(255,255,255,0.90);
+}
+</style>
+<div class="top-menu">
+<div class="top-menu-item-top"><a href="/">Top</a></div>
+<div class="top-menu-item"><a href="/docs/craft-uikit/index.html">craft-uikit</a></div>
+<div class="top-menu-item">
+	craft-widget-
+	<select id="widgetlink" onchange="var val=document.querySelector('#widgetlink').value; if(val){location.href=val;}">
+		<option value="">-</option>
+		<option value="/docs/craft-widget-navigationgroup/index.html">navigationgroup</option>
+		<option value="/docs/craft-widget-quicktools/index.html">quicktools</option>
+		<option value="/docs/craft-widget-calendar/index.html">calendar</option>
+	</select>
+</div>
+<div class="top-menu-item-github"><a href="https://github.com/craftkit" title="Github Project Page"><i class="fa fa-github" aria-hidden="true"></i></a></div>
+</div>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav class="wrap"  style="margin-top:10px;">
+	<a class="appname" href='index.html'>StickyHeaderNavi</a>
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    <h3>Packages</h3><ul><li class="packageDepth_0">Craft</li><li class="packageDepth_1">Widget</li><li class="packageDepth_2">StickyHeaderNavi</li><li class="packageDepth_3"><a href="BackButton.html">BackButton</a><ul class='methods'><li data-type='method' style='display: none;'><a href="BackButton.html#style">style</a></li><li data-type='method' style='display: none;'><a href="BackButton.html#template">template</a></li></ul></li><li class="packageDepth_3"><a href="Header.html">Header</a><ul class='methods'><li data-type='method' style='display: none;'><a href="Header.html#viewDidLoad">viewDidLoad</a></li><li data-type='method' style='display: none;'><a href="Header.html#getLargeHeight">getLargeHeight</a></li><li data-type='method' style='display: none;'><a href="Header.html#getSmallHeight">getSmallHeight</a></li><li data-type='method' style='display: none;'><a href="Header.html#onEnterSticky">onEnterSticky</a></li><li data-type='method' style='display: none;'><a href="Header.html#onExitSticky">onExitSticky</a></li><li data-type='method' style='display: none;'><a href="Header.html#onAppearBackButton">onAppearBackButton</a></li><li data-type='method' style='display: none;'><a href="Header.html#onDisappearBackButton">onDisappearBackButton</a></li><li data-type='method' style='display: none;'><a href="Header.html#style">style</a></li><li data-type='method' style='display: none;'><a href="Header.html#template">template</a></li></ul></li><li class="packageDepth_3"><a href="Page.html">Page</a><ul class='methods'><li data-type='method' style='display: none;'><a href="Page.html#getHeaderLarge">getHeaderLarge</a></li><li data-type='method' style='display: none;'><a href="Page.html#getHeaderSmall">getHeaderSmall</a></li><li data-type='method' style='display: none;'><a href="Page.html#style">style</a></li></ul></li><li class="packageDepth_3"><a href="ViewController.html">ViewController</a><ul class='methods'><li data-type='method' style='display: none;'><a href="ViewController.html#viewDidLoad">viewDidLoad</a></li><li data-type='method' style='display: none;'><a href="ViewController.html#viewDidAppear">viewDidAppear</a></li><li data-type='method' style='display: none;'><a href="ViewController.html#updateStickyHandler">updateStickyHandler</a></li><li data-type='method' style='display: none;'><a href="ViewController.html#open">open</a></li><li data-type='method' style='display: none;'><a href="ViewController.html#back">back</a></li><li data-type='method' style='display: none;'><a href="ViewController.html#style">style</a></li><li data-type='method' style='display: none;'><a href="ViewController.html#template">template</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+
+    
+
+
+
+    
+
+
+    <section class="package">
+        <h3> </h3>		
+    </section>
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    <section class="readme">
+        <article><h1>Craft-Widget-StickyHeaderNavi</h1>
+<p>Sticky header navigation system with parallax scrolling effect, for both browser and PWA.</p>
+<p>Try online tutorial:<br>
+<a href="https://github.com/craftkit/craftkit-playground">https://github.com/craftkit/craftkit-playground</a></p>
+<h2>Feature</h2>
+<ul>
+<li>Sticky header shrinked by scroll</li>
+<li>Back button for standalone mode (web app added to the home screen)</li>
+<li>Support for safe-area-inset-*</li>
+<li>Depends on Craft-UIKit.</li>
+</ul>
+<h2>How to use</h2>
+<p>Direct use:</p>
+<pre class="prettyprint source lang-html"><code>&lt;script src=&quot;https://unpkg.com/@craftkit/craft-uikit/dist/craft-uikit.min.js&quot;>&lt;/script>
+&lt;script src=&quot;https://unpkg.com/@craftkit/craft-widget-stickyheadernavi/dist/craft-widget-stickyheadernavi.min.js&quot;>&lt;/script>
+&lt;script>
+    window.onload = function(){
+        Craft.Core.Bootstrap.boot(App);
+    };
+&lt;/script>
+</code></pre>
+<p>or webpack style:</p>
+<pre class="prettyprint source lang-javascript"><code>import * as Craft from '@craftkit/craft-uikit';
+import * as StickyHeaderNavi from '@craftkit/craft-widget-stickyheadernavi';
+
+Craft.usePackage(StickyHeaderNavi);
+
+export class PageController extends Craft.Widget.StickyHeaderNavi.ViewController { ... }
+</code></pre>
+<h2>How to implement your Header</h2>
+<p>Header constructor requires 2 element, one is Large view, one is Small view.<br>
+Header starts in Large view, and when you scrolled over <code>Sticky threshold</code>, Small View is shown.</p>
+<p>You can implement your Header as a sub-class of <code>Craft.Widget.StickyHeaderNavi.Header</code> abstruct class.</p>
+<pre class="prettyprint source"><code>class MyHeader extends Craft.Widget.StickyHeaderNavi.Header {}
+
+let header = new MyHeader({
+    large : new LargeTitle(),
+    small : new SmallTitle()
+}),
+</code></pre>
+<p>The abstruct class implements several interface to support sticky behaviour with some restriction.<br>
+You have to define <code>height</code> of your Large View and Small View in its style for <code>.root</code> class element.<br>
+Because the Small View (or sometimes Large View if in the state of scrolled) is not in the DOM until it enabled.</p>
+<p>like this:</p>
+<pre class="prettyprint source"><code>class Title extends Craft.UI.View { ... }
+
+class LargeTitle extends Title {
+    style(componentId){
+        return super.style(componentId) + `
+            .root { height: 88px; }
+        `;
+    }
+}
+class SmallTitle extends Title {
+    style(componentId){
+        return super.style(componentId) + `
+            .root { height: 44px; }
+        `;
+    }
+}
+</code></pre>
+<p>If you want to make dynamically rendered Large and Small View, you have to override below method.<br>
+See JSDoc comment for details.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Item</th>
+<th style="text-align:left">Method</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Large height</td>
+<td style="text-align:left">getLargeHeight</td>
+<td style="text-align:left">The height of large view should be defined in its root style.</td>
+</tr>
+<tr>
+<td style="text-align:left">Small height</td>
+<td style="text-align:left">getSmallHeight</td>
+<td style="text-align:left">The height of small view should be defined in its root style.</td>
+</tr>
+<tr>
+<td style="text-align:left">Sticky threshold</td>
+<td style="text-align:left">getStickyThreshold</td>
+<td style="text-align:left">Threshold of scroll amount to make header sticky</td>
+</tr>
+</tbody>
+</table>
+<h2>Events your header may handle</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Event</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">onEnterSticky</td>
+<td style="text-align:left">called when the page scrolled to <code>sticky height</code>.<br>By default, when scrolled over <code>sticky</code> amount, large view is hidden and small view is shown.</td>
+</tr>
+<tr>
+<td style="text-align:left">onExitSticky</td>
+<td style="text-align:left">called when the page scroll backed to top area<br>By default, when scroll back to top area less than <code>sticky height</code>, large view is shown and small view is hidden.</td>
+</tr>
+<tr>
+<td style="text-align:left">onAppearBackButton</td>
+<td style="text-align:left">called when the back button appeared<br>By default, both large and small view will slide out 44px (defined in <code>.slide_out</code> css class).</td>
+</tr>
+<tr>
+<td style="text-align:left">onDisappearBackButton</td>
+<td style="text-align:left">called when the back button disappeared<br>By default, both large and small view will turn back to the original position (defined in <code>.slide_in</code> css class).</td>
+</tr>
+</tbody>
+</table>
+<h2>License</h2>
+<p>MIT</p></article>
+    </section>
+
+
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.0-dev</a> on Sun Jul 05 2020 16:04:17 GMT+0900 (Japan Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/jquery-3.1.1.min.js"></script>
+
+<script src="scripts/search.js"></script>
+
+
+<script src="scripts/collapse.js"></script>
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136310050-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-136310050-1');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>Page.js - Documentation</title>
+    
+    
+    
+    
+    
+    <meta property="og:title" content=""/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content=""/>
+    
+    <meta property="og:url" content=""/>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136310050-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-136310050-1');
+    </script>
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="padding-top:44px;">
+
+<style>
+.top-menu {
+	position:fixed;top:0px;left:0px;width:100%;height:44px;
+	display:flex;flex-direction:row;
+	background-color:rgba(102,0,102,0.90);
+	line-height:44px;font-size:18px;
+	color:rgba(255,255,255,0.90);
+	font-family:'Lucida Grande', 'Lucida Sans Unicode', arial, sans-serif;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.top-menu-item-top {
+	display:inline-block;padding-left:44px;padding-right:44px;cursor:pointer;
+}
+.top-menu-item-top:hover {
+	background-color:rgba(102,0,102,0.75);
+}
+.top-menu-item {
+	display:inline-block;padding-left:22px;padding-right:22px;cursor:pointer;
+}
+.top-menu-item:hover {
+	background-color:rgba(102,0,102,0.75);
+}
+.top-menu-item-top a {
+	color:rgba(255,255,255,0.90);
+}
+.top-menu-item a {
+	color:rgba(255,255,255,0.90);
+}
+.top-menu-item-github {
+	display:inline-block;padding-right:44px;margin-left:auto;cursor:pointer;font-size:24px;
+}
+.top-menu-item-github a {
+	color:rgba(255,255,255,0.90);
+}
+</style>
+<div class="top-menu">
+<div class="top-menu-item-top"><a href="/">Top</a></div>
+<div class="top-menu-item"><a href="/docs/craft-uikit/index.html">craft-uikit</a></div>
+<div class="top-menu-item">
+	craft-widget-
+	<select id="widgetlink" onchange="var val=document.querySelector('#widgetlink').value; if(val){location.href=val;}">
+		<option value="">-</option>
+		<option value="/docs/craft-widget-navigationgroup/index.html">navigationgroup</option>
+		<option value="/docs/craft-widget-quicktools/index.html">quicktools</option>
+		<option value="/docs/craft-widget-calendar/index.html">calendar</option>
+	</select>
+</div>
+<div class="top-menu-item-github"><a href="https://github.com/craftkit" title="Github Project Page"><i class="fa fa-github" aria-hidden="true"></i></a></div>
+</div>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav class="wrap"  style="margin-top:10px;">
+	<a class="appname" href='index.html'>StickyHeaderNavi</a>
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    <h3>Packages</h3><ul><li class="packageDepth_0">Craft</li><li class="packageDepth_1">Widget</li><li class="packageDepth_2">StickyHeaderNavi</li><li class="packageDepth_3"><a href="BackButton.html">BackButton</a><ul class='methods'><li data-type='method' style='display: none;'><a href="BackButton.html#style">style</a></li><li data-type='method' style='display: none;'><a href="BackButton.html#template">template</a></li></ul></li><li class="packageDepth_3"><a href="Header.html">Header</a><ul class='methods'><li data-type='method' style='display: none;'><a href="Header.html#viewDidLoad">viewDidLoad</a></li><li data-type='method' style='display: none;'><a href="Header.html#getLargeHeight">getLargeHeight</a></li><li data-type='method' style='display: none;'><a href="Header.html#getSmallHeight">getSmallHeight</a></li><li data-type='method' style='display: none;'><a href="Header.html#onEnterSticky">onEnterSticky</a></li><li data-type='method' style='display: none;'><a href="Header.html#onExitSticky">onExitSticky</a></li><li data-type='method' style='display: none;'><a href="Header.html#onAppearBackButton">onAppearBackButton</a></li><li data-type='method' style='display: none;'><a href="Header.html#onDisappearBackButton">onDisappearBackButton</a></li><li data-type='method' style='display: none;'><a href="Header.html#style">style</a></li><li data-type='method' style='display: none;'><a href="Header.html#template">template</a></li></ul></li><li class="packageDepth_3"><a href="Page.html">Page</a><ul class='methods'><li data-type='method' style='display: none;'><a href="Page.html#getHeaderLarge">getHeaderLarge</a></li><li data-type='method' style='display: none;'><a href="Page.html#getHeaderSmall">getHeaderSmall</a></li><li data-type='method' style='display: none;'><a href="Page.html#style">style</a></li></ul></li><li class="packageDepth_3"><a href="ViewController.html">ViewController</a><ul class='methods'><li data-type='method' style='display: none;'><a href="ViewController.html#viewDidLoad">viewDidLoad</a></li><li data-type='method' style='display: none;'><a href="ViewController.html#viewDidAppear">viewDidAppear</a></li><li data-type='method' style='display: none;'><a href="ViewController.html#updateStickyHandler">updateStickyHandler</a></li><li data-type='method' style='display: none;'><a href="ViewController.html#open">open</a></li><li data-type='method' style='display: none;'><a href="ViewController.html#back">back</a></li><li data-type='method' style='display: none;'><a href="ViewController.html#style">style</a></li><li data-type='method' style='display: none;'><a href="ViewController.html#template">template</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">Page.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>
+import * as Craft from '@craftkit/craft-uikit';
+
+/** 
+ * Abstruct Page
+ * 
+ * This class only provides style for sefa-area, and interface for dynamic header for each page.
+ * It is highly recommended to make your page as a sub-class of this Page class.
+ * 
+ * @packagename Craft.Widget.StickyHeaderNavi.Page
+ * 
+ * @example
+ * 
+ * class MyPage extends Craft.Widget.StickyHeaderNavi.Page {
+ *     constructor(){
+ *         super();
+ *         this.large_header = new LargeHeader();
+ *         this.small_header = new SmallHeader();
+ *     }
+ *     getHeaderLarge(){
+ *        return this.large_header;
+ *     }
+ *     getHeaderSmall(){
+ *        return this.small_header;
+ *     }
+ *     style(componentId){
+ *         return super.style(componentId) + `
+ *             .my_contents {
+ *                 color: red;
+ *             }
+ *         `;
+ *     }
+ *     template(self){
+ *         return `
+ *             &lt;div class="root">
+ *                 &lt;div class="my_contents">I am MyPage.&lt;/div>
+ *             &lt;/div>
+ *         `;
+ *     }
+ * }
+ * 
+ */
+export class Page extends Craft.UI.View {
+	
+	/**
+	 * Return *large* size header object for this page.
+	 * If you return null, viewController will not change header.
+	 * 
+	 * @return {Craft.UI.View|Craft.UI.ViewController} - normal size header component
+	 */
+	getHeaderLarge(){}
+	
+	/**
+	 * Return *small* size header component view for this page.
+	 * If you return null, viewController will not change header.
+	 * 
+	 * @return {Craft.UI.View|Craft.UI.ViewController} - small size header component
+	 */
+	getHeaderSmall(){}
+	
+	/** 
+	 * style
+	 * @protected
+	 */
+	style(componentId){
+		return `
+			* { 
+				box-sizing:border-box;
+			}
+			:host {
+				padding-left: env(safe-area-inset-left);
+				padding-right: env(safe-area-inset-right);
+			}
+		`;
+	}
+};
+
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.0-dev</a> on Sun Jul 05 2020 16:04:17 GMT+0900 (Japan Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/jquery-3.1.1.min.js"></script>
+
+<script src="scripts/search.js"></script>
+
+
+<script src="scripts/collapse.js"></script>
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136310050-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-136310050-1');
+</script>
+
+</body>
+</html>
