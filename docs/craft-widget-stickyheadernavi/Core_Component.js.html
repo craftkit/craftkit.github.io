@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>Core/Component.js - Documentation</title>
+    
+    
+    
+    
+    
+    <meta property="og:title" content=""/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content=""/>
+    
+    <meta property="og:url" content=""/>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136310050-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-136310050-1');
+    </script>
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="padding-top:44px;">
+
+<style>
+.top-menu {
+	position:fixed;top:0px;left:0px;width:100%;height:44px;
+	display:flex;flex-direction:row;
+	background-color:rgba(102,0,102,0.90);
+	line-height:44px;font-size:18px;
+	color:rgba(255,255,255,0.90);
+	font-family:'Lucida Grande', 'Lucida Sans Unicode', arial, sans-serif;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.top-menu-item-top {
+	display:inline-block;padding-left:44px;padding-right:44px;cursor:pointer;
+}
+.top-menu-item-top:hover {
+	background-color:rgba(102,0,102,0.75);
+}
+.top-menu-item {
+	display:inline-block;padding-left:22px;padding-right:22px;cursor:pointer;
+}
+.top-menu-item:hover {
+	background-color:rgba(102,0,102,0.75);
+}
+.top-menu-item-top a {
+	color:rgba(255,255,255,0.90);
+}
+.top-menu-item a {
+	color:rgba(255,255,255,0.90);
+}
+.top-menu-item-github {
+	display:inline-block;padding-right:44px;margin-left:auto;cursor:pointer;font-size:24px;
+}
+.top-menu-item-github a {
+	color:rgba(255,255,255,0.90);
+}
+</style>
+<div class="top-menu">
+<div class="top-menu-item-top"><a href="/">Top</a></div>
+<div class="top-menu-item"><a href="/docs/craft-uikit/index.html">craft-uikit</a></div>
+<div class="top-menu-item">
+	craft-widget-
+	<select id="widgetlink" onchange="var val=document.querySelector('#widgetlink').value; if(val){location.href=val;}">
+		<option value="">-</option>
+		<option value="/docs/craft-widget-navigationgroup/index.html">navigationgroup</option>
+		<option value="/docs/craft-widget-quicktools/index.html">quicktools</option>
+		<option value="/docs/craft-widget-calendar/index.html">calendar</option>
+		<option value="/docs/craft-widget-stickyheadernavi/index.html">stickyheadernavi</option>
+	</select>
+</div>
+<div class="top-menu-item-github"><a href="https://github.com/craftkit" title="Github Project Page"><i class="fa fa-github" aria-hidden="true"></i></a></div>
+</div>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav class="wrap"  style="margin-top:10px;">
+	<a class="appname" href='index.html'>Craft-UIKit</a>
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    <h3>Packages</h3><ul><li class="packageDepth_0">Craft</li><li class="packageDepth_1">Core</li><li class="packageDepth_2"><a href="Craft.Core.Bootstrap.html">Bootstrap</a><ul class='methods'><li data-type='method' style='display: none;'><a href="Craft.Core.Bootstrap.html#.boot">boot</a></li></ul></li><li class="packageDepth_2"><a href="Component.html">Component</a><ul class='methods'><li data-type='method' style='display: none;'><a href="Component.html#init">init</a></li><li data-type='method' style='display: none;'><a href="Component.html#render">render</a></li><li data-type='method' style='display: none;'><a href="Component.html#renderView">renderView</a></li><li data-type='method' style='display: none;'><a href="Component.html#loadStyle">loadStyle</a></li><li data-type='method' style='display: none;'><a href="Component.html#appendStyle">appendStyle</a></li><li data-type='method' style='display: none;'><a href="Component.html#unloadStyle">unloadStyle</a></li><li data-type='method' style='display: none;'><a href="Component.html#loadView">loadView</a></li><li data-type='method' style='display: none;'><a href="Component.html#unloadView">unloadView</a></li><li data-type='method' style='display: none;'><a href="Component.html#viewDidLoad">viewDidLoad</a></li><li data-type='method' style='display: none;'><a href="Component.html#viewWillAppear">viewWillAppear</a></li><li data-type='method' style='display: none;'><a href="Component.html#viewDidAppear">viewDidAppear</a></li><li data-type='method' style='display: none;'><a href="Component.html#viewWillDisappear">viewWillDisappear</a></li><li data-type='method' style='display: none;'><a href="Component.html#viewDidDisappear">viewDidDisappear</a></li><li data-type='method' style='display: none;'><a href="Component.html#showView">showView</a></li><li data-type='method' style='display: none;'><a href="Component.html#showComponent">showComponent</a></li><li data-type='method' style='display: none;'><a href="Component.html#hideView">hideView</a></li><li data-type='method' style='display: none;'><a href="Component.html#hideComponent">hideComponent</a></li><li data-type='method' style='display: none;'><a href="Component.html#appendSubView">appendSubView</a></li><li data-type='method' style='display: none;'><a href="Component.html#appendView">appendView</a></li><li data-type='method' style='display: none;'><a href="Component.html#removeSubView">removeSubView</a></li><li data-type='method' style='display: none;'><a href="Component.html#removeView">removeView</a></li><li data-type='method' style='display: none;'><a href="Component.html#removeFromParent">removeFromParent</a></li><li data-type='method' style='display: none;'><a href="Component.html#replaceView">replaceView</a></li><li data-type='method' style='display: none;'><a href="Component.html#style">style</a></li><li data-type='method' style='display: none;'><a href="Component.html#template">template</a></li></ul></li><li class="packageDepth_2"><a href="Craft.Core.ComponentStack.html">ComponentStack</a><ul class='methods'><li data-type='method' style='display: none;'><a href="Craft.Core.ComponentStack.html#.push">push</a></li><li data-type='method' style='display: none;'><a href="Craft.Core.ComponentStack.html#.set">set</a></li><li data-type='method' style='display: none;'><a href="Craft.Core.ComponentStack.html#.get">get</a></li><li data-type='method' style='display: none;'><a href="Craft.Core.ComponentStack.html#.del">del</a></li><li data-type='method' style='display: none;'><a href="Craft.Core.ComponentStack.html#.nextSerial">nextSerial</a></li></ul></li><li class="packageDepth_2"><a href="Craft.Core.Context.html">Context</a><ul class='members'><li data-type='member' style='display: none;'><a href="Craft.Core.Context.html#.setRouter">setRouter</a></li><li data-type='member' style='display: none;'><a href="Craft.Core.Context.html#.getRouter">getRouter</a></li></ul><ul class='methods'><li data-type='method' style='display: none;'><a href="Craft.Core.Context.html#.setApp">setApp</a></li><li data-type='method' style='display: none;'><a href="Craft.Core.Context.html#.getApp">getApp</a></li><li data-type='method' style='display: none;'><a href="Craft.Core.Context.html#.setRootElement">setRootElement</a></li><li data-type='method' style='display: none;'><a href="Craft.Core.Context.html#.getRootElement">getRootElement</a></li><li data-type='method' style='display: none;'><a href="Craft.Core.Context.html#.setRootViewController">setRootViewController</a></li><li data-type='method' style='display: none;'><a href="Craft.Core.Context.html#.getRootViewController">getRootViewController</a></li></ul></li><li class="packageDepth_2"><a href="Craft.Core.Defaults.html">Defaults</a><ul class='members'><li data-type='member' style='display: none;'><a href="Craft.Core.Defaults.html#.BASE_DIV_NAME">BASE_DIV_NAME</a></li><li data-type='member' style='display: none;'><a href="Craft.Core.Defaults.html#.ALLOW_COMPONENT_SHORTCUT">ALLOW_COMPONENT_SHORTCUT</a></li></ul></li><li class="packageDepth_2"><a href="Craft.Core.Gesture.html">Gesture</a><ul class='methods'><li data-type='method' style='display: none;'><a href="Craft.Core.Gesture.html#.enableTap">enableTap</a></li><li data-type='method' style='display: none;'><a href="Craft.Core.Gesture.html#.enableSwipe">enableSwipe</a></li></ul></li><li class="packageDepth_2"><a href="Craft.Core.HashRouter.html">HashRouter</a></li><li class="packageDepth_2"><a href="Craft.Core.KeyboardManager.html">KeyboardManager</a><ul class='methods'><li data-type='method' style='display: none;'><a href="Craft.Core.KeyboardManager.html#.activate">activate</a></li><li data-type='method' style='display: none;'><a href="Craft.Core.KeyboardManager.html#.register">register</a></li><li data-type='method' style='display: none;'><a href="Craft.Core.KeyboardManager.html#.remove">remove</a></li><li data-type='method' style='display: none;'><a href="Craft.Core.KeyboardManager.html#.clear">clear</a></li></ul></li><li class="packageDepth_2"><a href="Craft.Core.NotificationCenter.html">NotificationCenter</a><ul class='methods'><li data-type='method' style='display: none;'><a href="Craft.Core.NotificationCenter.html#.listen">listen</a></li><li data-type='method' style='display: none;'><a href="Craft.Core.NotificationCenter.html#.once">once</a></li><li data-type='method' style='display: none;'><a href="Craft.Core.NotificationCenter.html#.notify">notify</a></li><li data-type='method' style='display: none;'><a href="Craft.Core.NotificationCenter.html#.remove">remove</a></li></ul></li><li class="packageDepth_2"><a href="Craft.Core.PathRouter.html">PathRouter</a></li><li class="packageDepth_2"><a href="Route.html">Route</a></li><li class="packageDepth_2"><a href="Craft.Core.Router.html">Router</a><ul class='methods'><li data-type='method' style='display: none;'><a href="Craft.Core.Router.html#.route">route</a></li></ul></li><li class="packageDepth_2"><a href="StickComponent.html">StickComponent</a><ul class='methods'><li data-type='method' style='display: none;'><a href="StickComponent.html#init">init</a></li></ul></li><li class="packageDepth_2"><a href="Craft.Core.Transition.html">Transition</a><ul class='methods'><li data-type='method' style='display: none;'><a href="Craft.Core.Transition.html#.animate">animate</a></li></ul></li><li class="packageDepth_1">UI</li><li class="packageDepth_2"><a href="View.html">View</a><ul class='methods'><li data-type='method' style='display: none;'><a href="View.html#getViewController">getViewController</a></li><li data-type='method' style='display: none;'><a href="View.html#setViewController">setViewController</a></li></ul></li><li class="packageDepth_2"><a href="DefaultRootViewController.html">DefaultRootViewController</a><ul class='methods'><li data-type='method' style='display: none;'><a href="DefaultRootViewController.html#bringup">bringup</a></li><li data-type='method' style='display: none;'><a href="DefaultRootViewController.html#didReceivePopstate">didReceivePopstate</a></li><li data-type='method' style='display: none;'><a href="DefaultRootViewController.html#pushState">pushState</a></li><li data-type='method' style='display: none;'><a href="DefaultRootViewController.html#replaceState">replaceState</a></li><li data-type='method' style='display: none;'><a href="DefaultRootViewController.html#resolveRoutingRequest">resolveRoutingRequest</a></li></ul></li><li class="packageDepth_2"><a href="DefaultViewController.html">DefaultViewController</a><ul class='methods'><li data-type='method' style='display: none;'><a href="DefaultViewController.html#viewDidLoad">viewDidLoad</a></li><li data-type='method' style='display: none;'><a href="DefaultViewController.html#enableContentTapped">enableContentTapped</a></li><li data-type='method' style='display: none;'><a href="DefaultViewController.html#appendSubView">appendSubView</a></li><li data-type='method' style='display: none;'><a href="DefaultViewController.html#style">style</a></li><li data-type='method' style='display: none;'><a href="DefaultViewController.html#template">template</a></li></ul></li><li class="packageDepth_2"><a href="Craft.UI.Device.html">Device</a><ul class='methods'><li data-type='method' style='display: none;'><a href="Craft.UI.Device.html#.hasDisplayCutout">hasDisplayCutout</a></li><li data-type='method' style='display: none;'><a href="Craft.UI.Device.html#.isStandaloneMode">isStandaloneMode</a></li></ul></li><li class="packageDepth_2"><a href="ModalViewController.html">ModalViewController</a><ul class='methods'><li data-type='method' style='display: none;'><a href="ModalViewController.html#viewDidLoad">viewDidLoad</a></li><li data-type='method' style='display: none;'><a href="ModalViewController.html#setContent">setContent</a></li><li data-type='method' style='display: none;'><a href="ModalViewController.html#showMask">showMask</a></li><li data-type='method' style='display: none;'><a href="ModalViewController.html#hideMask">hideMask</a></li><li data-type='method' style='display: none;'><a href="ModalViewController.html#showContent">showContent</a></li><li data-type='method' style='display: none;'><a href="ModalViewController.html#hideContent">hideContent</a></li><li data-type='method' style='display: none;'><a href="ModalViewController.html#style">style</a></li><li data-type='method' style='display: none;'><a href="ModalViewController.html#template">template</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#LaunchEnv">LaunchEnv</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">Core/Component.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>
+import { ComponentStack } from './ComponentStack.js';
+
+/** 
+ * Super class for all Craft-UIKit Components.
+ * 
+ * @packagename Craft.Core.Component
+ */
+export class Component {
+	
+	/**
+	 * Component constructor.
+	 */
+	constructor(){
+		this.packagename    = ''; // TODO: waiting ES2020 class fields (define this to use for componentId base name instead of class name)
+		this.componentId    = ''; // unique identifier defined by name and serial
+		this.componentname  = ''; // conceptional name, automatically generated by init() according to the this.packagename
+		this.viewController = ''; // optional. viewController this component is managed by. would be set by viewController or by yourself.
+		this.isViewLoaded   = false; // true after init() and render() was called
+		this.parent         = null; // parent Component
+		
+		this.view   = document.createElement('div');            // shadow host
+		this.root   = '';                                       // component root based on `template`
+		this.shadow = this.view.attachShadow({ mode: 'open' }); // shadow root
+		this.css    = '';                                       // array of style
+		
+		// will be upgraded in init() if you define packagename
+		this.componentname = this.constructor.name;
+		this.component_serial = ComponentStack.nextSerial();
+		this.componentId = this.componentname + '_' + this.component_serial;
+	}
+	
+	/**
+	 * Initialize instance values 
+	 * 
+	 * Upgrade this.componentname and this.componentId by this.packagename if defined.
+	 * To avoid conflicting componentId, it is highly recommended to define this.packagename in the constructor of your Component sub-class.
+	 * 
+	 * TODO: waiting ES2020 class fields (to be able to define packagename in class field)
+	 * 
+	 * You should never call this method directly, and should never override this method. 
+	 * This is a part of `loadView` the initialization processs of Component, but separated for readability. 
+	 * 
+	 * Use `viewDidLoad` for your additional initialization.
+	 * 
+	 * (highly recommended to be implemented as synchronous)
+	 */
+	init(){
+		if( this.packagename ){
+			this.componentname = this.packagename.replace(/[\/\.]/g,'_'); // id should not have dot
+		}else{
+			this.componentname = this.constructor.name;
+		}
+		this.componentId = this.componentname + '_' + this.component_serial;
+		ComponentStack.set(this.componentId,this);
+		
+		this.view.id = this.componentId;
+	}
+	
+	/**
+	 * Render RootView and load stylesheet.
+	 * 
+	 * `template()` and `style()` can access to its instance variables via `this`. 
+	 * 
+	 * (highly recommended to be implemented as synchronous)
+	 */
+	render(){
+		this.loadStyle();
+		this.renderView();
+	}
+	
+	/**
+	 * Render template, and get the shadow DOM. 
+	 * 
+	 * If you call this method, this.root(including scoped style) will be cleared. 
+	 */
+	renderView(){
+		let html = this.template(this.componentId).trim();
+		let tmpl = document.createElement('template');
+		tmpl.innerHTML = html;
+		
+		if( this.root ){ this.root.remove(); }
+		
+		this.root = tmpl.content.firstChild;
+		
+		this.shadow.appendChild(this.root);
+	}
+	
+	/**
+	 * Load style defined in this instance
+	 */
+	loadStyle(){
+		if( this.style ){
+			this.appendStyle( this.style(this.componentId) );
+		}
+	}
+	
+	/**
+	 * Load style from text, and append it to the shadow root.
+	 * 
+	 * @param {String} style - stylesheet text expression
+	 * @param {String} id - id for the style tag (optional)
+	 */
+	appendStyle(style,id){
+		if( id ){
+			let element = this.view.getElementById(id);
+			if( element ){ this.view.removeChild(element); }
+		}
+		let element = document.createElement('style');
+		element.textContent = style;
+		element.id = id || this.componentId + '_' + ComponentStack.nextSerial();
+		this.shadow.appendChild(element);
+		
+		if( !this.css ){ this.css = []; }
+		this.css.push(element);
+	}
+	
+	/**
+	 * Remove all styles
+	 */
+	unloadStyle(){
+		if( this.css ){
+			for( let i=0; i&lt;this.css.length; i++ ){
+				this.css[i].remove();
+			}
+			this.css = '';
+		}
+	}
+	
+	/** 
+	 * Make this.view(RootView) and this.css.
+	 * 
+	 * ViewController or component consumer should call this method just after instantiate the component,
+	 * or whenever you want to use the instance of this component that is not yet ready (isViewLoaded is false).
+	 * 
+	 * You should not override this method. 
+	 * Use `viewDidLoad` for your additional initialization.
+	 * 
+	 * If you have to implement your own `loadView` method, you must implement yours as:
+	 * 
+	 * 1. this.init();  
+	 * 2. this.render();  
+	 *    (here, you can access to the RootView of this component)  
+	 *    (your component setup is in here)  
+	 * 3. set isViewLoaded to true.  
+	 * 4. call this.viewDidLoad(callback);  
+	 * 
+	 * and incomming callback should be passed to the `viewDidLoad`.
+	 * 
+	 * (this is highly recommended to be implemented as synchronous)
+	 * 
+	 * @summary Make this.view(RootView) and this.css
+	 * @argument {Function} callback - callback
+	 */
+	loadView(callback){
+		this.init();
+		this.render();
+		this.isViewLoaded = true;
+		this.viewDidLoad(callback);
+	}
+	
+	/**
+	 * Remove this.view (shadow DOM) from the Shadow host, and clear memory.
+	 * 
+	 * @argument {Function} callback - callback
+	 */ 
+	unloadView(callback){
+		this.viewWillDisappear();
+		this.view.remove();
+		this.viewDidDisappear();
+		this.view = '';
+		this.isViewLoaded = false;
+		ComponentStack.del(this.componentId);
+		if( callback ){ callback() }
+	}
+	
+	/**
+	 * Lifecycle method:  
+	 * Called at the end of `loadView`. Component instance loaded and ready to use this.view. 
+	 * 
+	 * You have to call callback at the end of yours.
+	 * 
+	 * @argument {Function} callback - callback
+	 */
+	viewDidLoad(callback){
+		if( callback ){ callback() }
+	}
+	
+	/**
+	 * Lifecycle method:  
+	 * Called just before appending `this.view` to the parent. 
+	 * 
+	 * You *must* call callback at the end of yours.
+	 * 
+	 * Component RootView is now on the screen (in the browser DOM tree), 
+	 * and concrete ViewController should ensure to be able to access `this.view` via global DOM tree after here.
+	 * 
+	 * @argument {Function} callback - callback
+	 */
+	viewWillAppear(callback){
+		if( callback ){ callback() }
+	}
+	
+	/**
+	 * Lifecycle method:  
+	 * Called just after `this.view` appended to the parent.  
+	 * After this method, you can access the compoenent's RootView via `document.getElementByID` and some other query selectors. 
+	 * 
+	 * You have to call callback at the end of yours.
+	 * 
+	 * @argument {Function} callback - callback
+	 */
+	viewDidAppear(callback){
+		if( callback ){ callback() }
+	}
+	
+	/**
+	 * Lifecycle method:  
+	 * Called just before removing `this.view` from its parent.  
+	 * You may remove your listener defined in `viewWillAppear` or `viewDidAppear`. 
+	 * 
+	 * You have to call callback at the end of yours.
+	 * 
+	 * @argument {Function} callback - callback
+	 */
+	viewWillDisappear(callback){
+		if( callback ){ callback() }
+	}
+	
+	/**
+	 * Lifecycle method:  
+	 * Called just after `this.view` removed from its parent.
+	 * 
+	 * You have to call callback at the end of yours.
+	 * 
+	 * @argument {Function} callback - callback
+	 */
+	viewDidDisappear(callback){
+		if( callback ){ callback() }
+	}
+	
+	/**
+	 * Show this component.
+	 * 
+	 * TODO:
+	 * this.view.style.display should cascade original definition.
+	 * It may be `inline-block`.
+	 * 
+	 * @argument {Function} callback - callback
+	 */
+	showView(callback){
+		this.view.style.display = 'block';
+		if( callback ){ callback() }
+	}
+	
+	/** 
+	 * alias for showView
+	 */
+	showComponent(callback){
+		this.showView(callback);
+	}
+	
+	/**
+	 * Hide this component.
+	 * 
+	 * @argument {Function} callback - callback
+	 */
+	hideView(callback){
+		this.view.style.display = 'none';
+		if( callback ){ callback() }
+	}
+	
+	/** 
+	 * alias for hideView
+	 */
+	hideComponent(callback){
+		this.hideView(callback);
+	}
+	
+	/**
+	 * Append sub-view to this.view.
+	 * 
+	 * @param {Object} options - option
+	 * @param {Element} options.target - target element to place the view
+	 * @param {Craft.UI.Componenet} options.component - sub view
+	 * @param {Function} callback - callback
+	 * @summary Append sub-view to this.view
+	 * 
+	 * @example
+	 * 
+	 * // append btn.view at the end of panel.view.
+	 * 
+	 * panel.appendView(btn);
+	 * 
+	 * // append btn.view in '#btn' under the ShadwRoot
+	 * 
+	 * this.appendView({
+	 *     target    : this.shadow.getElementById('btn'),
+	 *     component : btn
+	 * });
+	 * 
+	 * or
+	 * 
+	 * this.appendView({
+	 *     id        : 'btn', // or '#btn'
+	 *     component : btn
+	 * });
+	 * 
+	 * // if you know the structrue of panel.view, you can append btn.view directly into the deep point of the panel.
+	 * 
+	 * panel.appendView({
+	 *     target    : panel.shadow.getElementById('btn'),
+	 *     component : btn
+	 * });
+	 * 
+	 */
+	appendSubView(options){
+		if( !options ){ return; }
+		let target, component, callback;
+		
+		if( options instanceof Component ){
+			target    = this.root;
+			component = options;
+		}else{
+			if( options.id ){
+				let id = options.id.replace(/^#/,'');
+				target = this.shadow.getElementById(id);
+			}else{
+				target = options.target || this.root;
+			}
+			component = options.component;
+			callback  = options.callback;
+		}
+		
+		if( !component.isViewLoaded ){
+			component.loadView();
+		}
+		
+		if( this.viewController ){
+			component.setViewController(this.viewController);
+		}
+		
+		component.parent = this;
+		
+		component.viewWillAppear( () => {
+			target.appendChild(component.view);
+			if( callback ){ callback(); }
+			component.viewDidAppear();
+		});
+	}
+	
+	/** 
+	 * TODO: PENDING DEPRECATE: 
+	 * alias for appendSubView
+	 */
+	appendView(options){
+		this.appendSubView(options);
+	}
+	
+	/**
+	 * Remove a sub-view from this.view
+	 * 
+	 * `removeView` does not call `unloadView` of the removed view.
+	 * When to parge the component is a responsibility of your component consumer.
+	 * 
+	 * @param {Object} options - option or remove target Componenet
+	 * @param {Craft.UI.Componenet} options.component - Component to be removed
+	 * @param {Function} callback - callback
+	 * @summary Remove a sub-view from this.view
+	 * 
+	 * @example
+	 * 
+	 * // remove this.btn.view from this.view. 
+	 * 
+	 * this.removeView(this.btn);
+	 * 
+	 */
+	removeSubView(options){
+		if( !options ){ return; }
+		let component, callback;
+		
+		if( options instanceof Component ){
+			component = options;
+		}else{
+			component = options.component;
+			callback  = options.callback;
+		}
+		
+		component.viewWillDisappear( () => {
+			component.view.remove();
+			if( callback ){ callback(); }
+			component.viewDidDisappear();
+		});
+	}
+	
+	/** 
+	 * TODO: PENDING DEPRECATE: 
+	 * alias for removeSubView
+	 */
+	removeView(options){
+		this.removeSubView(options);
+	}
+	
+	/** 
+	 * Remove me from parent
+	 */
+	removeFromParent(options){
+		this.parent.removeSubView(this);
+	}
+	
+	/**
+	 * TODO: replaceView -> replaceSubView
+	 * 
+	 * Replace view
+	 * 
+	 * remove all components in the target, and append new one.
+	 * 
+	 * @example
+	 * 
+	 * let loading_indicator = new LoadingIndicator();
+	 * 
+	 * this.appendView(loading_indicator);
+	 * 
+	 * database.load(id,(data)=>{
+	 *     let view = new DataView({data:data});
+	 *     this.replaceView(view);
+	 * });
+	 * 
+	 */
+	replaceView(options){
+		if( !options ){ return; }
+		let target, component, callback;
+		
+		if( options instanceof Component ){
+			target    = this.root;
+			component = options;
+		}else{
+			if( options.id ){
+				let id = options.id.replace(/^#/,'');
+				target = this.shadow.getElementById(id);
+			}else{
+				target = options.target || this.root;
+			}
+			component = options.component;
+			callback  = options.callback;
+		}
+		
+		while(target.firstChild){
+			target.removeChild(target.firstChild);
+		}
+		this.appendSubView({
+			target    : target,
+			component : component
+		});
+	}
+	
+	/**
+	 * Stylesheet definition.
+	 * 
+	 * If you would like to cascade styles from parent class, just append super.style
+	 * 
+	 * ``` 
+	 * style(componentId){
+	 *     return　super.style(componentId) + `
+	 *         .override { ... }
+	 *     `;
+	 * }
+	 * ```
+	 * 
+	 * @param {String} componentId - this.componentId
+	 */
+	style(componentId){ return `.root {}`; }
+	
+	/**
+	 * RootView template.
+	 * 
+	 * `template` must have only one element.
+	 * 
+	 * @param {String} componentId - this.componentId
+	 */
+	template(componentId){ return `&lt;div class="root">&lt;/div>`; }
+}
+
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.0-dev</a> on Sun Nov 08 2020 21:40:43 GMT+0900 (Japan Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/jquery-3.1.1.min.js"></script>
+
+<script src="scripts/search.js"></script>
+
+
+<script src="scripts/collapse.js"></script>
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136310050-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-136310050-1');
+</script>
+
+</body>
+</html>
